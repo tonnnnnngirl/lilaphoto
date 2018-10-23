@@ -3,6 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* 共通のCSS */
+.ot_disgri{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"ot_left ot_center ot_right" 
+}
+
+.ot_left{
+	grid-area:ot_left;
+	text-align:center;
+}
+
+.ot_center{
+	grid-area:ot_center;
+	text-align:center;
+}
+
+.ot_right{
+	grid-area:ot_right;
+	text-align:center;
+}
+
+
+
+
+/* モバイルのCSS */
 @media(min-width:671px){
 
 .home{
@@ -12,8 +39,9 @@
 	grid-template-areas:
 	"header-logo header-navi header-icon"
 	"search-box contents contents"
-	"footer footer footer"
+	"footer footer footer";
 }
+
 
 .header-logo{
 	grid-area:header-logo;
@@ -52,30 +80,45 @@ footer{
 	.home{
 		display:grid;
 		grid-template-columns: 1fr;
-		background-color:lavender;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas:
+		"header-logo"
+		"header-navi"
+		"search-box"
+		"contents"
+		"footer";
+	
 	}
 
+
+
 	.header-logo{
+		grid-area:header-logo;
 		background-color:red;
 	}
 
 	.header-navi{
+		grid-area:header-navi;
 		background-color:pink;
 	}
 
 	.header-icon{
+		display:none;
 		background-color:coral;
 	}
 
 	.search-box{
+		grid-area:search-box;
 		background-color:blue;
 	}
 
 	.contents{
+		grid-area:contents;
 		background-color:royalblue;
 	}
 
 	footer{
+		grid-area:footer;
 		background-color:yellow;
 	}
 }
