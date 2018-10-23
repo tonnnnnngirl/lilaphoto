@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* 共通のCSS */
+@media(min-width:671px){
 
 .home{
 	display:grid;
@@ -42,4 +43,39 @@
 footer{
 	grid-area:footer;
 	background-color:yellow;
+}
+
+	
+}
+
+@media(max-width: 670px){
+	.home{
+		display:grid;
+		grid-template-columns: 1fr;
+		background-color:lavender;
+	}
+
+	.header-logo{
+		background-color:red;
+	}
+
+	.header-navi{
+		background-color:pink;
+	}
+
+	.header-icon{
+		background-color:coral;
+	}
+
+	.search-box{
+		background-color:blue;
+	}
+
+	.contents{
+		background-color:royalblue;
+	}
+
+	footer{
+		background-color:yellow;
+	}
 }
