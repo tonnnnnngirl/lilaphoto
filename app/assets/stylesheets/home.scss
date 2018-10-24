@@ -4,6 +4,7 @@
 
 /* 共通のCSS */
 .ot_disgri{
+	font-size:20px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
@@ -29,17 +30,33 @@
 
 
 
-/* モバイルのCSS */
+/* デスクトップのCSS */
 @media(min-width:671px){
 
 .home{
 	display:grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 100px auto 100px;
+	grid-template-rows: 70px auto 100px;
 	grid-template-areas:
 	"header-logo header-navi header-icon"
 	"search-box contents contents"
 	"footer footer footer";
+}
+
+.header-icon .ot_disgri{
+   padding-left:50px;
+   height:70px;
+}
+
+.header-navi .ot_disgri{
+  height:70px;
+}
+
+
+.naviicon{
+	text-align:center;
+	display:inline-block;
+	padding-left:5px;
 }
 
 
@@ -89,8 +106,6 @@ footer{
 		"footer";
 	
 	}
-
-
 
 	.header-logo{
 		grid-area:header-logo;
