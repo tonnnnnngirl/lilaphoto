@@ -2,30 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* 共通のCSS */
-.ot_disgri{
-	font-size:20px;
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"ot_left ot_center ot_right" 
-}
+/* 【共通のCSS】 */
+	.container{
+		width:80%;
+		margin:0 auto;
+		text-align:center;
+	}
 
-.ot_left{
-	grid-area:ot_left;
-	text-align:center;
-}
+/* 分割するためののCSS */
+	.half{
+		width:50%;
+		float:left;
+	}
 
-.ot_center{
-	grid-area:ot_center;
-	text-align:center;
-}
+	.one-third{
+		width:33.333%;
+		float:left;
+	}
 
-.ot_right{
-	grid-area:ot_right;
-	text-align:center;
-}
+	.quarter{
+		width:25%;
+		float:left;
+	}
 
 
 
@@ -43,14 +41,6 @@
 	"footer footer footer";
 }
 
-.header-icon .ot_disgri{
-   padding-left:50px;
-   height:70px;
-}
-
-.header-navi .ot_disgri{
-  height:70px;
-}
 
 
 .naviicon{
@@ -93,6 +83,8 @@ footer{
 	
 }
 
+
+/* モバイル用のCSS */
 @media(max-width: 670px){
 	.home{
 		display:grid;
@@ -127,10 +119,23 @@ footer{
 		background-color:blue;
 	}
 
+
+
+	.camtype-box{
+		float:left;
+		width:50%;
+	}
+
+	.howto-box{
+		float:left;
+		width:50%;
+	}
+
 	.contents{
 		grid-area:contents;
 		background-color:royalblue;
 	}
+
 
 	footer{
 		grid-area:footer;
