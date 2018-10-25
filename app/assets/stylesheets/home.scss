@@ -4,6 +4,7 @@
 
 /* 【共通のCSS】 */
 	.container{
+		height:auto;
 		width:80%;
 		margin:0 auto;
 		text-align:left;
@@ -25,6 +26,16 @@
 		text-align:center !important;
 	}
 
+
+	.post-wrapper .user-icon{
+		width:20%;
+		float:left;
+	}
+
+	.post-wrapper .post-contents{
+		width:80%;
+		float:left;
+	}
 
 
 
@@ -124,6 +135,13 @@ footer{
 		background-color:red;
 	}
 
+	.header-logo h3{
+		font-size:30px;
+		margin-top:15px;
+		margin-bottom:15px;
+		text-align:center !important;
+	}
+
 	.header-navi{
 		grid-area:header-navi;
 		background-color:pink;
@@ -158,9 +176,21 @@ footer{
 		display:none;
 	}
 
+	.posts{
+		height:400px;
+	}
+
+	.posts h3{
+		margin-top:30px;
+		margin-bottom:0;
+	}
+
 	.post-wrapper .one-third{
+		height:120px;
 		width:100%;
 	}
+
+
 
 	footer{
 		grid-area:footer;
