@@ -119,8 +119,6 @@ footer{
 		background-color:blue;
 	}
 
-
-
 	.camtype-box{
 		float:left;
 		width:50%;
@@ -136,6 +134,9 @@ footer{
 		background-color:royalblue;
 	}
 
+.message-wrapper{
+	display:none;
+}
 
 	footer{
 		grid-area:footer;
