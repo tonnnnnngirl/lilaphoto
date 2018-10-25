@@ -6,8 +6,29 @@
 	.container{
 		width:80%;
 		margin:0 auto;
-		text-align:center;
+		text-align:left;
 	}
+
+	.fa{
+		margin-right:10px;
+	}
+
+	.header-navi .one-third{	
+		font-size:20px;
+		line-height:70px;
+		text-align:center !important;
+	}
+
+	.header-icon .one-third{
+		font-size:30px;
+		line-height:70px;
+		text-align:center !important;
+	}
+
+
+
+
+
 
 /* 分割するためののCSS */
 	.half{
@@ -40,7 +61,6 @@
 	"search-box contents contents"
 	"footer footer footer";
 }
-
 
 
 .naviicon{
@@ -134,9 +154,13 @@ footer{
 		background-color:royalblue;
 	}
 
-.message-wrapper{
-	display:none;
-}
+	.message-wrapper{
+		display:none;
+	}
+
+	.post-wrapper .one-third{
+		width:100%;
+	}
 
 	footer{
 		grid-area:footer;
