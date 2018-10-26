@@ -148,6 +148,7 @@
 	}
 
 	.contents{
+		background: image-url('/message-wrapper1.jpg');
 		grid-area:contents;
 		background-color:royalblue;
 	}
@@ -190,7 +191,7 @@ footer{
 	.home{
 		display:grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: auto auto 176px auto auto;
+		grid-template-rows: auto auto 185px auto auto;
 		grid-template-areas:
 		"header-logo"
 		"header-navi"
@@ -230,7 +231,7 @@ footer{
 	.search-box{
 		grid-area:search-box;
 		background-color:blue;
-		padding:10px;
+		padding-top:30px;
 	}
 
 	.camtypes{
@@ -296,6 +297,9 @@ footer{
 	.post-wrapper .one-third{
 		height:110px;
 		width:100%;
+		background-color: crimson;
+    	margin-bottom: 10px;
+    	padding: 5px;
 	}
 
 	.post-contents h3{
