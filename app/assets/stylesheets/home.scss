@@ -6,7 +6,7 @@
 	*{
 		margin:0;
 		padding:0;
-		font-family:'游ゴシック';
+		font-family:'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
 	}
 
 	.container{	
@@ -83,7 +83,7 @@
 	.home{
 		display:grid;
 		grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: 70px auto 100px;
+		grid-template-rows: 70px auto 50px;
 		grid-template-areas:
 		"header-logo header-navi header-icon"
 		"search-box contents contents"
@@ -100,7 +100,7 @@
 
 	.header-logo{
 		grid-area:header-logo;
-		background-color:red;
+		background-color:rgb(53,84,105);
 		padding-top:12px;
 	}
 
@@ -108,17 +108,17 @@
 
 	.header-navi{
 		grid-area:header-navi;
-		background-color:pink;
+		background-color:rgb(53,84,105);
 	}
 
 	.header-icon{
 		grid-area:header-icon;
-		background-color:coral;
+		background-color:rgb(53,84,105);
 	}
 
 	.search-box{
 		grid-area:search-box;
-		background-color:blue;
+		background-color:rgb(253,234,223);
 		padding-top:12px;
 	}
 
@@ -160,11 +160,20 @@
 
 	.posts{
 		height:190px;
+		background-color:rgba(255,255,255,0.4);
+		padding-top:3px;
+		padding-bottom:8px;
+		margin-bottom:10px;
+
 	}
 
 	.posts h2{
 		margin-top:30px;
 		margin-bottom:8px;
+	}
+
+	.post-wrapper{
+		height:480px;
 	}
 
 	.post-wrapper .one-third{
@@ -179,7 +188,7 @@
 
 footer{
 	grid-area:footer;
-	background-color:yellow;
+	background-color:rgb(53,84,105);
 }
 
 	
@@ -207,7 +216,7 @@ footer{
 
 	.header-logo{
 		grid-area:header-logo;
-		background-color:red;
+		background-color:rgb(53,84,105);
 		padding-top:12px;
 	}
 
@@ -220,17 +229,17 @@ footer{
 
 	.header-navi{
 		grid-area:header-navi;
-		background-color:pink;
+		background-color:rgb(192,224,207);
 	}
 
 	.header-icon{
 		display:none;
-		background-color:coral;
+		background-color:rgb(53,84,105);
 	}
 
 	.search-box{
 		grid-area:search-box;
-		background-color:blue;
+		background-color:rgb(253,234,223);
 		padding-top:30px;
 	}
 
@@ -278,7 +287,7 @@ footer{
 
 	.contents{
 		grid-area:contents;
-		background-color:royalblue;
+		background-color:rgb(253,234,223);
 	}
 
 	.message-wrapper{
@@ -297,7 +306,7 @@ footer{
 	.post-wrapper .one-third{
 		height:110px;
 		width:100%;
-		background-color: crimson;
+		background-color: rgba(255,255,255,0.4);
     	margin-bottom: 10px;
     	padding: 5px;
 	}
@@ -312,6 +321,6 @@ footer{
 
 	footer{
 		grid-area:footer;
-		background-color:yellow;
+		background-color:rgb(53,84,105);
 	}
 }
